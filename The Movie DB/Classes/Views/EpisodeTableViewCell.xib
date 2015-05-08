@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="95" id="7Rb-4O-dOY" customClass="EpisodeTableViewCell" customModule="The_Movie_DB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Rb-4O-dOY" id="Iw7-8x-ZSN">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFz-qB-Rmf">
+                        <rect key="frame" x="8" y="8" width="27" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="VN7-Ju-hsz"/>
+                            <constraint firstAttribute="height" constant="21" id="XBu-VI-kon"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQE-aF-FXp">
+                        <rect key="frame" x="43" y="8" width="269" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ZG1-vN-Vfh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="461-YD-v0S">
+                        <rect key="frame" x="43" y="37" width="269" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="N7t-aI-dYR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OQE-aF-FXp" firstAttribute="top" secondItem="Iw7-8x-ZSN" secondAttribute="top" constant="8" id="Af2-bp-ZgL"/>
+                    <constraint firstItem="461-YD-v0S" firstAttribute="top" secondItem="OQE-aF-FXp" secondAttribute="bottom" constant="8" id="DHW-Ab-nFj"/>
+                    <constraint firstItem="OQE-aF-FXp" firstAttribute="leading" secondItem="YFz-qB-Rmf" secondAttribute="trailing" constant="8" id="UxW-Ec-xbh"/>
+                    <constraint firstItem="YFz-qB-Rmf" firstAttribute="leading" secondItem="Iw7-8x-ZSN" secondAttribute="leading" constant="8" id="Wzb-ox-Q4Y"/>
+                    <constraint firstItem="YFz-qB-Rmf" firstAttribute="top" secondItem="Iw7-8x-ZSN" secondAttribute="top" constant="8" id="XvM-4L-5qK"/>
+                    <constraint firstItem="461-YD-v0S" firstAttribute="leading" secondItem="Iw7-8x-ZSN" secondAttribute="leading" constant="43" id="fuv-Es-Fle"/>
+                    <constraint firstAttribute="trailing" secondItem="OQE-aF-FXp" secondAttribute="trailing" constant="8" id="kZF-62-LAi"/>
+                    <constraint firstAttribute="trailing" secondItem="461-YD-v0S" secondAttribute="trailing" constant="8" id="w47-y5-uj3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="OQE-aF-FXp" id="ukz-CL-1Rv"/>
+                <outlet property="numberLabel" destination="YFz-qB-Rmf" id="UuK-ur-xHr"/>
+                <outlet property="overviewLabel" destination="461-YD-v0S" id="UDi-DB-VDD"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="257.5"/>
+        </tableViewCell>
+    </objects>
+</document>
